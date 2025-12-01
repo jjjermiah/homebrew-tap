@@ -1,12 +1,12 @@
 class DumpDir < Formula
   desc "CLI to dump directory structure and metadata"
   homepage "https://github.com/fargusplumdoodle/dump_dir"
-
+  license "MIT"
   # -- VERSION ----------------------------------------------------------
   # IMPORTANT:
   # Set this to the latest release tag of the upstream repo.
   # Example: v0.4.1 or 0.4.1 depending on their tags.
-  version "1.2.4" # <--- update this manually each release
+  version "v1.2.4" # <--- update this manually each release
   # ---------------------------------------------------------------------
 
   livecheck do
