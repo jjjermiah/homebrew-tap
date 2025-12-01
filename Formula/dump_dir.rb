@@ -10,6 +10,13 @@ class DumpDir < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/jjjermiah/tap"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "da3115267b561cd4519f509846c31c7f33a97e8adc0dbb7de740aaa8769b6bed"
+    sha256 cellar: :any_skip_relocation, sequoia:      "a982dc108cb409687c9fe21cc1333c6cc61467624753dc8b08c081417c50bd1e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "84c96c4f50fc2386a11034acc08d8b41b52ed6f3121f40765fe8f153791e5aed"
+  end
+
   on_macos do
     if Hardware::CPU.arm?
       # https://github.com/fargusplumdoodle/dump_dir/releases/download/v1.2.4/dump_dir_darwin_amd64
